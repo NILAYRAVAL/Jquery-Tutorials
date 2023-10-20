@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <script src="java.js"></script>
+   
+   <script>
+
+     $(document).ready (function(){
+     $("#bun").click (function (){
+        $("p").hide();
+        // $('.hello').hide();
+        // $('#hello').hide();
+        // $ ("*").hide();             // hide everything
+        // $(this).hide();             // hide only button
+        // $(':button').hide();        // hide all buttons
+    });
+  });
+</script>
+ 
+
+</head>
+
+<body>
+
+     <h2 class="hello">This is Good opportunity!!!</h2>
+     <h2 id="hello">This is Good opportunity!!!</h2>
+     <p>This is a line text</p>
+     <p>This is a another line of text</p>
+     <h4>Great job !!!!</h4>
+     <button id="bun">Hide</button>
+     <button>Hide Also</button>
+
+     <script>
+      document.getElementById('hello') = "Great job Everybody"; 
+     </script>
+ 
+     
+</body>
+
+</html>
