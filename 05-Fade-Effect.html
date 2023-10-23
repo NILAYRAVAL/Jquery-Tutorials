@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade-Effect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script>
+
+   $(document).ready(function(){
+
+    $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn(1000);
+        $("#div3").fadeIn(3000);
+        $("#div4").fadeIn(5000);
+    });
+
+    $("#fadeout").click(function(){
+        $("#div1").fadeOut(5000);
+        $("#div2").fadeOut(3000);
+        $("#div3").fadeOut(1000);
+        $("#div4").fadeOut();
+    });
+
+    $("#fadetoggle").click(function(){
+        $("#div1").fadeToggle(5000);
+        $("#div2").fadeToggle(3000);
+        $("#div3").fadeToggle(1000);
+        $("#div4").fadeToggle();
+    });
+
+    $("#fadeto").click(function(){
+        $("#div1").fadeTo(1000, 0.20);            //0.20 opacity
+        $("#div2").fadeTo(1000, 0.40);
+        $("#div3").fadeTo(1000, 0.60);
+        $("#div4").fadeTo(1000, 0.80);
+    })
+   });
+
+
+
+    </script>
+
+    <style>
+    .box{
+        width:160px;
+        height: 160px;
+        display:none;
+        background-color: red;
+
+    }
+    </style>
+</head>
+<body>
+
+  <button>Fade Effect- In</button>
+  <button id="fadeout">Fade Effect-Out</button>
+  <button id="fadetoggle">Fade Effect Toggle</button>
+  <button id="fadeto">Fade To Effect</button><br/><br/>
+
+  <div id="div1" class="box"></div><br/>
+  <div id="div2" class="box"></div><br/>
+  <div id="div3" class="box"></div><br/>
+  <div id="div4" class="box"></div><br/>
+
+
+</body>
+</html>
