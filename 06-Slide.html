@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide-Down-Up</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+  $(document).ready(function(){
+
+    // $("#topbar").click(function(){
+    // $("#panel").slideDown(1000);
+    // });
+
+    // $("#topbar").click(function(){
+    // $("#panel").slideUp(1000);
+    // });
+
+    $("#topbar").click(function(){
+    $("#panel").slideToggle(1000);    
+    });
+
+  });
+    </script>
+
+    <style>
+  
+  #panel {
+        display: none;
+   }
+    </style>
+
+</head>
+<body>
+    <div id="topbar">View Panel</div>
+    <div id="panel">This is a Panel with sample Content</div>
+</body>
+</html>
