@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery-Animate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <script>
+            $(document).ready(function(){
+
+                $("button").click(function(){
+
+                // $("#square").animate({left: '800px'}, 1000);      // 1000 milisec or 1sec
+                // $("#square").animate({left: '800px', opacity: 0.25, height: "toggle"}, 1000);    
+                // $("#square").animate({left: '800px', opacity: 0.25, height: "+=20px", width: "+=20px"}, 1000);    
+                
+                 var square = $("#square");
+                 square.animate({height : "500px", opacity : "0.5"}, 1000); 
+                 square.animate({width : "500px", opacity : "0.9"}, 500); 
+                 square.animate({height : "200px", opacity : "0.5"}, 1000); 
+                 square.animate({width : "200px", opacity : "0.5"}, 500); 
+            
+            });
+            });
+  </script>
+
+  <style>
+    #square{
+        background-color: blue;
+        height: 160px;
+        width: 160px;
+        margin-top: 50px;
+        position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+    <button>Start Animation</button>
+    <div id="square"></div>
+</body>
+</html>
