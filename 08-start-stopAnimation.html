@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start-stop-Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+            $(document).ready(function (){
+                $("#start").click (function (){
+                    $("#square").animate({left: "800px"}, 3000);
+                });
+
+               $("#stop").click (function(){
+                $("#square").stop();
+               }) ;
+            });
+
+    </script>
+
+    <style>
+
+     #square {
+
+        background:rgb(26, 26, 169);
+        height:160px;
+        width:160px;
+        margin-top: 6px;
+        position: absolute;
+    }
+       
+       </style>
+
+</head>
+
+<body>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+    
+    <div id="square"></div>
+</body>
+</html>
